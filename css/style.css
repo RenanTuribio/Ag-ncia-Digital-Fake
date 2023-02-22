@@ -20,13 +20,14 @@ body {
 /* ---------------------------------------- */
 /* navbar */
 .navbar {
+    padding: 0 10%;
+    width: 100%;
+    position: fixed;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     height: 100px;
     background:white;
-    width: 80%;
-    margin: 0 auto;
 }
 
 .logo {
@@ -81,6 +82,7 @@ li #botaoNav:hover {
 /* headline */
 .headline {
     margin: 0 auto;
+    padding-top: 100px;
     width: 80%;
     display: flex;
     flex-flow: row wrap;
@@ -140,6 +142,7 @@ section h2 {
 .servicos {
     width: 80%;
     margin: 0 auto;
+    padding:0;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -188,3 +191,36 @@ footer {
     position: relative;
     top: 50px;
 }
+/* ---------------------------------------- */
+/* resposividade */
+@media screen and (max-width:1440px) {
+    .menu {
+        display: none;
+    }
+    
+    .logo h1 {
+        text-align: center;
+    }
+    
+    .headline {
+        flex-flow: column wrap;
+    }
+    
+    .headlineText {
+        text-align: center;
+    }
+
+    .headlineText h2 {
+        font-size: 70px;
+    }
+    
+    .headlineImg img {
+        width: 70%;
+    }
+    
+    .servicos {
+        flex-flow: column wrap;
+    }
+}
+
+
